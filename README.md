@@ -1,4 +1,5 @@
 # vue3-spa-template
+
 [![vue3-spa-template](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/simple/zco2wv/master&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/zco2wv/runs)
 
 This template should help get you started developing with Vue 3 in Vite.
