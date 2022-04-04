@@ -34,6 +34,7 @@ npm run build
 
 ```sh
 npm run test:unit
+npm run coverage # for unit test coverage
 ```
 
 ### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
