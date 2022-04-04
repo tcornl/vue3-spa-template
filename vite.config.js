@@ -15,6 +15,9 @@ export default defineConfig({
   test: {
     coverage: {
       reporter: ["text", "json", "html"],
+      all: true,
+      src: ["src"],
+      extension: [".js", ".vue"],
     },
   },
 });
