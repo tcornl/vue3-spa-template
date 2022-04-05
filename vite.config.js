@@ -17,6 +17,7 @@ export default defineConfig({
       reporter: ["text", "json", "html"],
       all: true,
       src: ["src"],
+      include: ["src/**/*.js", "src/**/*.vue"],
       extension: [".js", ".vue"],
     },
   },
