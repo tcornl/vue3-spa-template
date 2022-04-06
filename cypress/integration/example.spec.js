@@ -2,7 +2,7 @@
 
 describe("My First Test", () => {
   it("navigate the app and verify elements", () => {
-    cy.visit("/");
+    cy.visit("/vue3-spa-template/");
     cy.contains("h1", "You did it!").should("be.visible");
     cy.contains("a", "About").click();
     cy.contains("h1", "This is an about page").should("be.visible");
