@@ -15,8 +15,9 @@ Sentry.init({
     new BrowserTracing({
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
       tracingOrigins: [
-        "http://localhost:3000/",
-        "http://localhost:5050/",
+        "http://localhost:3000/vue3-spa-template/",
+        "http://localhost:5050/vue3-spa-template/",
+        "https://tcornl.github.io/vue3-spa-template/",
         /^\//,
       ],
     }),
