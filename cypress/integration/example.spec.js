@@ -21,7 +21,7 @@ describe("App Navigation", () => {
   });
 });
 
-describe("Dynamic Urls", () => {
+describe("Dynamic Route Matching", () => {
   it("directly navigates to non-home pages", () => {
     cy.visit("/about");
     cy.url().should("eq", "http://localhost:5050/vue3-spa-template/about");
