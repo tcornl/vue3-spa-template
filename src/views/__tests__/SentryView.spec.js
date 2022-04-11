@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 
 import { mount } from "@vue/test-utils";
-import SentryView from "../SentryView.vue";
+import SentryView from "@/views/SentryView.vue";
 
 describe("SentryView", () => {
   it("throws error when clicked", () => {
