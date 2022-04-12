@@ -10,6 +10,10 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: "/:pathMatch(.*)*",
+      redirect: { name: "home" },
+    },
+    {
       path: "/about",
       name: "about",
       // route level code-splitting
