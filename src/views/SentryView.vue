@@ -1,6 +1,5 @@
 <script>
 export default {
-  // ...
   methods: {
     throwError() {
       throw new Error("Sentry Error");

@@ -10,13 +10,13 @@ describe("My First Test", () => {
 describe("App Navigation", () => {
   it("navigates the app views and verifies page content", () => {
     cy.visit("/");
-    cy.url().should("include", "/vue3-spa-template/");
+    cy.url().should("eq", "http://localhost:5050/vue3-spa-template/");
     cy.contains("h1", "You did it!").should("be.visible");
     cy.contains("a", "About").click();
-    cy.url().should("include", "/vue3-spa-template/about");
+    cy.url().should("eq", "http://localhost:5050/vue3-spa-template/about");
     cy.contains("h1", "This is an about page").should("be.visible");
     cy.contains("a", "Sentry").click();
-    cy.url().should("include", "/vue3-spa-template/sentry");
+    cy.url().should("eq", "http://localhost:5050/vue3-spa-template/sentry");
     cy.contains("button", "Throw error").should("be.visible");
   });
 });
@@ -28,9 +28,11 @@ describe("Dynamic Route Matching", () => {
   });
 });
 
-describe("404 Redirect", () => {
-  it("redirects to home for would-be 404 urls", () => {
+describe("Page Not Found", () => {
+  it("indicates the page does not exist and provides a button link to home ", () => {
     cy.visit("/abc123");
+    cy.contains("h1", "Sorry, this page does not exist!").should("be.visible");
+    cy.contains("a", "Back To Home").click();
     cy.url().should("eq", "http://localhost:5050/vue3-spa-template/");
   });
 });
