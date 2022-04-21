@@ -17,9 +17,9 @@ Sentry.init({
     new BrowserTracing({
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
       tracingOrigins: [
-        import.meta.env.VITE_SERVE_URL,
-        import.meta.env.VITE_BUILD_URL,
-        import.meta.env.VITE_GH_PAGES_URL,
+        import.meta.env.VITE_SERVE_DOMAIN,
+        import.meta.env.VITE_BUILD_DOMAIN,
+        import.meta.env.VITE_GH_PAGES_DOMAIN,
         /^\//,
       ],
     }),
