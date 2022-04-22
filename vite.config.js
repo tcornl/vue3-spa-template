@@ -12,13 +12,18 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  // For deployment to GitHub Pages, set base to '/<REPO>/' when deploying to https://<USERNAME>.github.io/<REPO>/
+  // https://vitejs.dev/guide/static-deploy.html#github-pages
   base: "/vue3-spa-template/",
   test: {
+    environment: "jsdom",
+    reporter: "verbose",
+    // https://vitest.dev/guide/features.html#coverage
+    // https://github.com/bcoe/c8
     coverage: {
       reporter: ["text", "json", "html"],
       all: true,
-      src: ["src"],
-      include: ["src/**/*.js", "src/**/*.vue"],
+      src: ["./src"],
       extension: [".js", ".vue"],
     },
   },

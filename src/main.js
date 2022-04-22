@@ -8,6 +8,8 @@ import router from "./router";
 
 const app = createApp(App);
 
+// Sentry basic Vue config
+// https://docs.sentry.io/platforms/javascript/guides/vue/#vue-3
 Sentry.init({
   app,
   dsn: import.meta.env.VITE_SENTRY_DSN,
@@ -15,9 +17,9 @@ Sentry.init({
     new BrowserTracing({
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
       tracingOrigins: [
-        "http://localhost:3000/vue3-spa-template/",
-        "http://localhost:5050/vue3-spa-template/",
-        "https://tcornl.github.io/vue3-spa-template/",
+        import.meta.env.VITE_SERVE_DOMAIN,
+        import.meta.env.VITE_BUILD_DOMAIN,
+        import.meta.env.VITE_GH_PAGES_DOMAIN,
         /^\//,
       ],
     }),
@@ -26,7 +28,6 @@ Sentry.init({
   // of transactions for performance monitoring.
   // We recommend adjusting this value in production
   tracesSampleRate: 1.0,
-  logErrors: true,
 });
 
 app.use(createPinia());
