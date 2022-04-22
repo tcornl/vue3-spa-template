@@ -1,1 +1,0 @@
-import{o as t,c as o,a as e,b as a,u as s,R as n,w as r,d as c}from"./index.52226f6c.js";const u=e("h1",null,"Sorry, this page does not exist!",-1),l=c("Back To Home"),m={setup(_){return(d,i)=>(t(),o("div",null,[u,e("button",null,[a(s(n),{to:{name:"home"}},{default:r(()=>[l]),_:1})])]))}};export{m as default};
