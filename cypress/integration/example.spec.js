@@ -23,7 +23,7 @@ describe("App Navigation", () => {
 
 describe("Dynamic Route Matching", () => {
   it("directly navigates to non-home pages", () => {
-    cy.visit("#/about");
+    cy.visit(Cypress.env("about_url"));
     cy.url().should("eq", Cypress.config().baseUrl + "#/about");
     cy.visit("#/sentry");
     cy.url().should("eq", Cypress.config().baseUrl + "#/sentry");
