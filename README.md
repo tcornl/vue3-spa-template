@@ -37,7 +37,22 @@ See the [GitHub documentation](https://docs.github.com/en/repositories/creating-
 5. `cd <REPO>` and set up the project for development with the command `npm install`.
 6. Change the repository's environment variables and repo name instances to represent your project.
 
-<!-- ### Merge latest template changes -->
+### Merge latest template changes
+
+1. Add the `vue3-spa-template` repository as a remote.
+```sh
+git remote add template https://github.com/tcornl/vue3-spa-template.git
+```
+2. Create a `template-integration` branch used to pull the latest changes from `vue3-spa-template` to be merged into master.
+```sh
+git branch template-integration
+git checkout template-integration
+```
+3. Sync with `vue3-spa-template` via a `git pull`.
+```sh
+git pull template master --allow-unrelated-histories
+```
+4. Merge `template-integration` into `master`.
 
 ## Development
 
