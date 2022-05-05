@@ -37,7 +37,28 @@ See the [GitHub documentation](https://docs.github.com/en/repositories/creating-
 5. `cd <REPO>` and set up the project for development with the command `npm install`.
 6. Change the repository's environment variables and repo name instances to represent your project.
 
-<!-- ### Merge latest template changes -->
+### Merge latest template changes
+
+1. Add the `vue3-spa-template` repository as a remote.
+
+```sh
+git remote add template https://github.com/tcornl/vue3-spa-template.git
+```
+
+2. Create a `template-integration` branch used to pull the latest changes from `vue3-spa-template` to be merged into master.
+
+```sh
+git branch template-integration
+git checkout template-integration
+```
+
+3. Sync with `vue3-spa-template` via a `git pull`.
+
+```sh
+git pull template master --allow-unrelated-histories
+```
+
+4. Merge `template-integration` into `master`.
 
 ## Development
 
@@ -65,41 +86,11 @@ See the [GitHub documentation](https://docs.github.com/en/repositories/creating-
 
 ## Tech stack
 
-### Source
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-
-### Dev Tools
-
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Vue Devtools](https://devtools.vuejs.org/)
-
-### Application + Build
+Additional technologies used can be found at [wiki/Tech-Stack](https://github.com/tcornl/vue3-spa-template/wiki/Tech-Stack).
 
 - [Node.js](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/)
 - [Vite](https://vitejs.dev/)
 - [Vue.js](https://vuejs.org/)
   - [Vue Router](https://router.vuejs.org/)
   - [Pinia](https://pinia.vuejs.org/)
-
-### Testing
-
-- [Vitest](https://vitest.dev/)
-- [Cypress](https://www.cypress.io/)
-- [Vue Test Utils](https://test-utils.vuejs.org/)
-
-### Production
-
 - [GitHub Pages](https://pages.github.com/)
-- [Sentry](https://sentry.io/welcome/)
-
-### Future Integrations
-
-- [Testing Library](https://testing-library.com/)
-- [Codecov](https://about.codecov.io/)
-- [Storybook](https://storybook.js.org/)
-- [GitHub Actions](https://github.com/features/actions)
