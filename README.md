@@ -86,41 +86,11 @@ git pull template master --allow-unrelated-histories
 
 ## Tech stack
 
-### Source
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Git](https://git-scm.com/)
-- [GitHub](https://github.com/)
-
-### Dev Tools
-
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Vue Devtools](https://devtools.vuejs.org/)
-
-### Application + Build
+Additional technologies used can be found at [wiki/Tech-Stack](https://github.com/tcornl/vue3-spa-template/wiki/Tech-Stack).
 
 - [Node.js](https://nodejs.org/en/)
-- [npm](https://www.npmjs.com/)
 - [Vite](https://vitejs.dev/)
 - [Vue.js](https://vuejs.org/)
   - [Vue Router](https://router.vuejs.org/)
   - [Pinia](https://pinia.vuejs.org/)
-
-### Testing
-
-- [Vitest](https://vitest.dev/)
-- [Cypress](https://www.cypress.io/)
-- [Vue Test Utils](https://test-utils.vuejs.org/)
-
-### Production
-
 - [GitHub Pages](https://pages.github.com/)
-- [Sentry](https://sentry.io/welcome/)
-
-### Future Integrations
-
-- [Testing Library](https://testing-library.com/)
-- [Codecov](https://about.codecov.io/)
-- [Storybook](https://storybook.js.org/)
-- [GitHub Actions](https://github.com/features/actions)
