@@ -1,1 +1,0 @@
-import{_ as e,o as n,c as s}from"./index.eafc9d5f.js";const a={methods:{throwError(){throw new Error("Sentry Error")}}};function c(w,r,_,f,p,o){return n(),s("button",{onClick:r[0]||(r[0]=(...t)=>o.throwError&&o.throwError(...t))},"Throw error")}var d=e(a,[["render",c]]);export{d as default};
