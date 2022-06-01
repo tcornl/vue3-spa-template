@@ -73,7 +73,6 @@ git pull template master --allow-unrelated-histories
 
 ### Scripts (see package.json)
 
-- `install` - Project Setup
 - `dev` - Compile and Hot-Reload for Development
 - `build` - Compile and Minify for Production
 - `preview` - Locally preview production build
