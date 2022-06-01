@@ -2,7 +2,7 @@
 
 vue3-spa-template is a GitHub template repository for quickly starting new Vue.js single-page application projects.
 
-Visit the project's [Wiki](https://github.com/tcornl/vue3-spa-template/wiki) for more information and https://tcornl.github.io/vue3-spa-template/#/ to view the latest release hosted on GitHub Pages.
+Visit the project's [Wiki](https://github.com/tcornl/vue3-spa-template/wiki) for more information and <https://tcornl.github.io/vue3-spa-template/#/> to view the latest release hosted on GitHub Pages.
 
 ## Overview
 
@@ -30,7 +30,7 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 See the [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for more information.
 
-1. Visit https://github.com/tcornl/vue3-spa-template and click the "Use this template" button. You can also visit https://github.com/tcornl/vue3-spa-template/generate directly.
+1. Visit <https://github.com/tcornl/vue3-spa-template> and click the "Use this template" button. You can also visit <https://github.com/tcornl/vue3-spa-template/generate> directly.
 2. Fill out the new repository's general information and settings. The "Include all branches" checkbox is unchecked by default. This documentation will cover the creation of a `gh-pages` branch for deploying to GitHub Pages in its own section.
 3. In a terminal, `cd` to the repository's desired parent directory.
 4. Clone the repository from GitHub to your local machine with the command `git clone https://github.com/<USERNAME>/<REPO>.git`.
@@ -40,23 +40,17 @@ See the [GitHub documentation](https://docs.github.com/en/repositories/creating-
 ### Merge latest template changes
 
 1. Add the `vue3-spa-template` repository as a remote.
-
-```sh
-git remote add template https://github.com/tcornl/vue3-spa-template.git
-```
+`git remote add template https://github.com/tcornl/vue3-spa-template.git`
 
 2. Create a `template-integration` branch used to pull the latest changes from `vue3-spa-template` to be merged into master.
 
-```sh
-git branch template-integration
-git checkout template-integration
-```
+    ```sh
+    git branch template-integration
+    git checkout template-integration
+    ```
 
 3. Sync with `vue3-spa-template` via a `git pull`.
-
-```sh
-git pull template master --allow-unrelated-histories
-```
+`git pull template master --allow-unrelated-histories`
 
 4. Merge `template-integration` into `master`.
 
