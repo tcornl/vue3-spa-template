@@ -1,0 +1,1 @@
+import{_ as e,o,c as t,a as s}from"./index.84de5bd0.js";const a={},c=s("p",null,"Page does not exist!",-1),n=[c];function r(_,d){return o(),t("div",null,n)}var i=e(a,[["render",r]]);export{i as default};
