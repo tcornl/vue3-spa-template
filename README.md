@@ -38,22 +38,22 @@ See the [GitHub documentation](https://docs.github.com/en/repositories/creating-
 
 1. Add the `vue3-spa-template` repository as a remote named `template`.
 
-    ```sh
-    git remote add template https://github.com/tcornl/vue3-spa-template.git
-    ```
+   ```sh
+   git remote add template https://github.com/tcornl/vue3-spa-template.git
+   ```
 
 2. Create a `template-integration` branch used to pull the latest changes from `vue3-spa-template` to be merged into master.
 
-    ```sh
-    git branch template-integration
-    git checkout template-integration
-    ```
+   ```sh
+   git branch template-integration
+   git checkout template-integration
+   ```
 
 3. Sync with `vue3-spa-template`.
 
-    ```sh
-    git pull template master --allow-unrelated-histories
-    ```
+   ```sh
+   git pull template master --allow-unrelated-histories
+   ```
 
 4. Merge `template-integration` into `master`.
 
