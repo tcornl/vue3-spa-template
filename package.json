@@ -1,6 +1,10 @@
 {
   "name": "vue3-spa-template",
   "version": "0.0.0",
+  "description": "A boilerplate GitHub template repository for quickly starting new Vue.js single-page application projects.",
+  "license": "MIT",
+  "main": "src/main.js",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
